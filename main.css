@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ddd;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #080101;
+    color: #fff;
+  }
+  
+  #logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  #title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Add some basic styling for the modal */
+  #song-modal.modal {
+    display: none;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5); /* Changed to white with transparency */
+  }
+  
+  .modal-content {
+    background-color: #222; /* Changed to dark gray */
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Changed to black with transparency */
+  }
+  
+  .close {
+    color: #fff; /* Changed to white */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ccc; /* Changed to light gray */
+    text-decoration: none;
+  }
+  
+  /* Style the container for the cards */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  /* Style the individual cards */
+  .card {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Changed to white with transparency */
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff; /* Changed to white */
+  }
+  
+  .card-artist {
+    margin: 0 10px 10px;
+    font-size: 1rem;
+    color: #bbb; /* Changed to light gray */
+  }
+  
+  /* Making the Pop Up  */
+  .box {
+    background-color: rgb(50, 50, 50); /* Changed to dark gray */
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Changed to black with transparency */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close {
+    font-size: 45px;
+    color: rgb(210, 210, 210); /* Changed to light gray */
+    font-weight: 900;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    z-index: 1000;
+  }
+  
+  .popupImage {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Changed to white with transparency */
+    margin-bottom: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .close {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .close:hover {
+    text-decoration: underline;
+  }
